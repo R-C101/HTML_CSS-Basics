@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Dynamic Island</title>
+        <style>
+            .container {
+            font-family: arial;
+            font-size: 24px;
+            margin: 25px;
+            width: 281px;
+            height: 581px;
+            outline: dashed 1px black;
+            display: flex;
+            justify-content: center;
+            border-radius: 30px;
+          }
+          
+          .child {
+            margin-top: 10px;
+            width: 100px;
+            height: 32px;
+            background-color: white;
+            border-radius: 20px;
+            transition: height 0.6s;
+          }
+          .child:hover{
+            height:120px;
+            background-image: url("image/download.gif");
+            background-position: center bottom;
+            background-size: contain;
+            background-repeat: no-repeat;
+            box-shadow: 0px 2px 3px rgba(0,0,0,.15);
+
+          }
+          
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <button class="child"></button>
+          </div>
+    </body>
+</html>
